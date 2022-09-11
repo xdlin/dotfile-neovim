@@ -46,3 +46,8 @@ set.termguicolors = true
 g.t_co = 256
 g.background = "dark"
 cmd('colorscheme solarized-flat')
+g.did_load_filetypes = 1
+
+-- disable netrw
+vim.g.loaded = 1
+vim.g.loaded_netrwPlugin = 1

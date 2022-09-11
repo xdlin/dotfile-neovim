@@ -2,21 +2,17 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
-    use 'w0rp/ale'
+    -- use 'w0rp/ale'
     use 'vim-scripts/bufexplorer.zip'
     use 'kyazdani42/nvim-tree.lua'
-    use {
-        'scrooloose/nerdtree',
-        requires = 'kyazdani42/nvim-web-devicons'
-    }
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
-    use {
-        'nvim-telescope/telescope.nvim',
-        requires = { { 'nvim-lua/plenary.nvim' } }
-    }
+    use 'nvim-lua/plenary.nvim'
+    use 'kyazdani42/nvim-web-devicons'
+    -- use {
+    --     'scrooloose/nerdtree',
+    --     requires = 'kyazdani42/nvim-web-devicons'
+    -- }
+    use 'nvim-lualine/lualine.nvim'
+    use 'nvim-telescope/telescope.nvim'
     use 'airblade/vim-gitgutter'
     use 'junegunn/gv.vim'
     use 'majutsushi/tagbar'
@@ -60,7 +56,6 @@ return require('packer').startup(function()
 
     use {
         "folke/trouble.nvim",
-        requires = "kyazdani42/nvim-web-devicons",
         config = function()
             require("trouble").setup {
                 -- your configuration comes here
@@ -68,5 +63,11 @@ return require('packer').startup(function()
                 -- refer to the configuration section below
             }
         end
+    }
+    use {
+        'nathom/filetype.nvim',
+        config = function()
+            require("filetype").setup({})
+        end,
     }
 end)

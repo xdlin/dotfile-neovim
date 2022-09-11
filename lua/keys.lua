@@ -4,7 +4,7 @@ local function map(m, k, v)
 end
 
 map('n', '<C-P>', ':Telescope find_files<CR>')
-map('n', '<F1>',  ':NERDTreeToggle<CR>')
+map('n', '<F1>',  ':NvimTreeToggle<CR>')
 map('n', '<F2>',  ':Telescope live_grep<CR>')
 map('n', '<F3>',  ':Telescope buffers<CR>')
 map('n', '<F4>',  ':Telescope oldfiles<CR>')
