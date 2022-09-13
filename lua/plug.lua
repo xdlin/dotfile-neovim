@@ -2,15 +2,10 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
-    -- use 'w0rp/ale'
     use 'vim-scripts/bufexplorer.zip'
     use 'kyazdani42/nvim-tree.lua'
     use 'nvim-lua/plenary.nvim'
     use 'kyazdani42/nvim-web-devicons'
-    -- use {
-    --     'scrooloose/nerdtree',
-    --     requires = 'kyazdani42/nvim-web-devicons'
-    -- }
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-telescope/telescope.nvim'
     use 'airblade/vim-gitgutter'
