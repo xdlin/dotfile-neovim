@@ -12,8 +12,6 @@ return require('packer').startup(function()
     use 'junegunn/gv.vim'
     use 'majutsushi/tagbar'
 
-    use 'ggandor/lightspeed.nvim'
-
     -- color schemes
     use 'sainnhe/gruvbox-material'
     use 'EdenEast/nightfox.nvim'
