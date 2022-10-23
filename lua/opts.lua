@@ -11,6 +11,7 @@ set.relativenumber = true
 set.scrolloff = 4
 set.signcolumn = "yes"
 set.wrap = false
+set.cmdheight = 0
 
 -- [[ Filetypes ]]
 set.encoding = "utf8"
@@ -46,7 +47,6 @@ set.termguicolors = true
 g.t_co = 256
 g.background = "dark"
 cmd('colorscheme solarized-flat')
-g.did_load_filetypes = 1
 
 -- disable netrw
 vim.g.loaded = 1

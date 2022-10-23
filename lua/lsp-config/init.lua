@@ -2,8 +2,8 @@ local cmp_nvim_lsp = require('cmp_nvim_lsp')
 local nvim_lsp = require('lspconfig')
 
 local on_attach = function(_, bufnr)
-    vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
-    vim.api.nvim_buf_set_option(bufnr, 'tagfunc', 'v:lua.vim.lsp.tagfunc')
+    -- vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+    -- vim.api.nvim_buf_set_option(bufnr, 'tagfunc', 'v:lua.vim.lsp.tagfunc')
 
     -- Mappings.
     -- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -18,7 +18,7 @@ local on_attach = function(_, bufnr)
     vim.keymap.set('n', 'gR', vim.lsp.buf.rename, opts)
     vim.keymap.set('n', 'ga', vim.lsp.buf.code_action, opts)
     vim.keymap.set('n', 'gm', vim.lsp.buf.signature_help, opts)
-    vim.keymap.set('n', '<leader>gf', vim.lsp.buf.formatting, opts)
+    vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, opts)
     vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
     vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, opts)
     vim.keymap.set('n', '<leader>wl', function()
