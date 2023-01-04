@@ -30,10 +30,10 @@ local on_attach = function(_, bufnr)
     vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
 end
 
-local capabilities = cmp_nvim_lsp.update_capabilities(
+local capabilities = cmp_nvim_lsp.default_capabilities(
     vim.lsp.protocol.make_client_capabilities())
 
-local servers = { 'clangd', 'gopls', 'pylsp' }
+local servers = { 'clangd', 'gopls', 'pylsp', 'rust_analyzer' }
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
         on_attach = on_attach,
