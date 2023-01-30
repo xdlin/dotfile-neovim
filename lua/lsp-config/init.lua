@@ -58,11 +58,12 @@ require 'lspconfig'.sumneko_lua.setup {
             diagnostics = {
                 -- Get the language server to recognize the `vim` global
                 -- Now, you don't get error/warning "Undefined global `vim`".
-                globals = { 'vim' },
+                globals = { 'vim', 'use' },
             },
             workspace = {
                 -- Make the server aware of Neovim runtime files
                 library = vim.api.nvim_get_runtime_file("", true),
+                checkThirdParty = false,
             },
             -- By default, lua-language-server sends anonymized data to its developers. Stop it using the following.
             telemetry = {
