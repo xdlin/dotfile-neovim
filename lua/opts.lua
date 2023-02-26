@@ -46,7 +46,7 @@ set.syntax = "on"
 set.termguicolors = true
 g.t_co = 256
 g.background = "dark"
-cmd('colorscheme solarized-flat')
+cmd('silent! colorscheme solarized-flat')
 
 -- disable netrw
 vim.g.loaded = 1
