@@ -14,4 +14,5 @@ map('n', '<F11>', ':TagbarToggle<CR>')
 map("n", "<leader>ff", ":Telescope find_files<cr>")
 map("n", "<leader>fg", ":Telescope live_grep<cr>")
 map("n", "<leader>fb", ":Telescope buffers<cr>")
+map("n", "<leader>tt", ":ToggleTerm<cr>")
 
